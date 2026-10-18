@@ -1,5 +1,9 @@
 # HCP Targeting using system 1 Model - Laya
 
+To test the app
+
+[HCP Targeting](https://hcp-targeting-nba.streamlit.app/)
+
 ## Project Setup
 
 ### UV backbone
