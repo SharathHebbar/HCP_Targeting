@@ -37,32 +37,7 @@ The goal is to make the workflow easier to inspect and govern than a single open
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    A["HCP Unified Data State<br/>Profile and prescribing metrics<br/>CRM notes and qualitative objections"]
-    B["System 1: Laya Decision Engine<br/>ModernBERT-Large backbone<br/>Typed decision outputs"]
-    B1["Rep Visit Priority"]
-    B2["Optimal Channel"]
-    B3["Content Theme"]
-    B4["Churn-Risk Signal"]
-    C["Compliance & Arbitration<br/>Frequency cap · Consent checks · Escalation rules"]
-    D["System 2: Generative Asset Stitcher<br/>openai/gpt-oss-20b via Groq"]
-    E["Tactical Pre-Call Brief"]
-    F["Rep-Triggered Email Draft"]
-
-    A --> B
-    B --> B1
-    B --> B2
-    B --> B3
-    B --> B4
-    B1 --> C
-    B2 --> C
-    B3 --> C
-    B4 --> C
-    C --> D
-    D --> E
-    D --> F
-```
+![Targeting Architecture](assets/06_targeting.png)
 
 ### End-to-end flow
 
